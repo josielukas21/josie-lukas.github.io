@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLIS-4206 Accessibility Audit Report</title>
+    <!-- Bootstrap CSS Code -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+<!-- Main Container Div that provides padding -->
+<div class="container"> 
+<h1>Accessibility Testing on Star Lake Elementary School Website </h1>
+
+<p>
+    Name: Josie Lukas <br>
+    Class Project: Accessibility Testing For Star Lake Elementary School<br>
+    Website: <a href="https://starlake.fwps.org/">Star Lake Elementary School</a>  <br>
+    Date: 5-6-2024
+</p>
+
+
+<p>The purpose of this report is to help identify possible website digital accessibility issues in order to prevent any access issues to this website via assistive technologies. The following accessibility checklist is based on the <a href="https://www.w3.org/WAI/test-evaluate/preliminary/">W3C WAI Easy Checks – A First Review of Web Accessibility</a> I hope that you will find this report helpful and informative and find the recommendations to be actionable. </p>
+
+<h2>Accessibility Checklist</h2>
+<h3>Website Page Titles</h3>
+<p>In the web page markup, the <code>&lt;title&gt;</code> is within the <code>&lt;head&gt;</code> tag. Good page titles are particularly important for orientation, they help people know where they are and move between pages open in their browser tab. The first thing screen readers say when the user goes to a different web page is the page title.</p>
+
+<!-- green success css class -->
+<p class="alert alert-success" role="alert">Results: <i class="bi bi-hand-thumbs-up-fill"></i> Titles are accurately assigned to different pages throughout the website. Titles are frontloaded with the important information about the page and then labeled with the school name. This is a good practice that allows screen readers to accurately present the information.  </p>
+
+<h3>Image Text Alternatives</h3>
+<p>Image text alternatives ("alt text") (pictures, illustrations, charts, etc.) Text alternatives convey the purpose of an image, including pictures, illustrations, charts, etc. The alt attribute provides an alternative text for an image, if the user for some reason cannot view it. The reason can be a slow connection, an error with the image file, or if the user uses a screen reader.</p>
+<!-- red thumbs down css class -->
+<p class="alert alert-danger" role="alert">Results: <i class="bi bi-hand-thumbs-down-fill"></i> It was noted on several of the website’s pages, that there were either linked images that did not have alternative text or the alternative text did not accurately describe the image. Several of the images have the same general alternative text of “Star Lake Elementary Scholars”. This does not accurately describe the image especially since the images it is linked to are completely different images. </p>
+
+
+<h3>Text:</h3>
+ Headings, Contrast Ratio ("color contrast") and Resizing Text should not only support visual aesthetics but also support the navigation and visibility of text content.
+
+<p class="alert alert-success" role="alert">Results - Headings<i class="bi bi-hand-thumbs-up-fill"></i> <i class="bi bi-hand-thumbs-down-fill"></i> The structure of the headings for this website make it hard to navigate. There is no clear hierarchical structure since there is no clear H1 and multiple H2. It is important for their to be a clear hierarchical structure to that people using assistive technology can navigate the pages and access information easily. </p>
+    </p>
+
+
+<div class="alert alert-success" role="alert">
+<p>Results - Contrast Ratio  <i class="bi bi-hand-thumbs-down-fill"></i> When the color contrast was tested on multiple pages of this website, results show that there is very low contrast between the text and background colors. This is problematic because adequate contrast of text and background is needed for users to access information, especially users who have vision issues. </p>
+</div>
+
+<div class="alert alert-success" role="alert">
+<p>Results - Resizing Text  <i class="bi bi-hand-thumbs-up-fill"></i>Star Lake Elementary School’s website does very well when text is scaled up. The page redistributes information in an appropriate way and the text is readable when scale is increased.</p>
+</div>
+
+ <h3>Interaction:</h3>
+ <h4>Keyboard access and visual focus </h4>  
+ <p>Many people cannot use a mouse and rely on a keyboard to interact with web pages. Keyboard focus should be clearly visible and should follow a logical order through the page elements. Visible keyboard focus could be a border or highlight. </p>
+<!-- red success div -->
+ <div class="alert alert-danger" role="alert">
+<p>Results: <i class="bi bi-hand-thumbs-up-fill"></i> Using keyboard commands to navigate the school website are easy use and have the ability to flow from command to command. I could tab through the options and also navigate through sub-lists of options offered through the menu option as well. There is a Skip to Main Content feature that easily allows users to skip to the main content of the page.</p>
+</div>
+
+
+<h4>Forms, labels, and errors (including Search fields): </h4>
+Users are able to keyboard navigate to the different forms fields. 
+Each form control has a label element with a for attribute that matches the value of the id attribute in the related control. For example:
+<ul>
+    <li>Each form control has a <code>label</code> element with a <code>for</code> attribute that  matches the value of the <code>id</code> attribute in the related control. For example:<br>
+        <code>&lt;label for="firstname"&gt;First name: &lt;/label&gt;<br>
+        &lt;input type="text" name="firstname" id="firstname" /&gt;<br>
+        </code> </li>
+        <li>Each <code>id</code> is unique within the web page.</li>
+</ul>
+<div class="alert alert-warning" role="alert">
+<p>Results <i class="bi bi-hand-thumbs-up-fill"></i> 
+    Search fields are easy to navigate, using both traditional mouse commands as well as through keyboard access. This website doesn’t have any forms directly connected or embedded forms/ documents. There are also no error messages when I checked search fields. </p>
+</div>
+
+
+ <h3>General:</h3>
+ <p>Moving, Flashing, or Blinking Content: Moving, flashing, or blinking content includes carousels (example carousel), ads, videos, auto-updating stock tickers, scrolling news feeds, and more. 
+    Users need to be able to control moving content, especially some people with attention deficit disorder or visual processing disorders.</p>
+ 
+ <div class="alert alert-warning" role="alert">
+ <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i><i class="bi bi-hand-thumbs-up-fill"></i> Star Lake Elementary school has an image carousel on their website homepage. The carousel does an okay job of presenting information but has a couple of problematic elements. Some of the good things about it includes that it doesn’t move to quickly and it has a pause button. Some of the problematic elements include that there is important information such as enrollment information and early release bell schedules that really should have a permanent, non-moving spot on the webpage. Another problematic element is there are some low contrast issues involving the text and images that role through the carousel. </p>
+</div>
+
+
+ <p>Multimedia (video, audio) closed captions and transcripts</p>
+ <div class="alert alert-warning" role="alert">
+ <p>Results: <i class="bi bi-hand-thumbs-down-fill"></i><i class="bi bi-hand-thumbs-up-fill"></i> The Star Lake Elementary website does not include any videos or audio recordings.</p>
+</div>
+
+ <p>Basic Structure Check: It helps you understand how some people "see" the web page differently. For this basic structure check, you look at the web page without images, styles, and layout.
+Web pages are often designed with multiple columns, sections, colors, and other visual aspects that help organize information for people who see the page in its default display. 
+However, some people do not see the page this way.</p>
+
+<div class="alert alert-danger" role="alert">
+<p>Results: <i class="bi bi-hand-thumbs-down-fill"></i>When checking basic structure, I used the Wave accessibility tool to remove visual styling. The navigation of this website without visual styling is okay but it highlighted some issues with inconsistent headings and redundant links that are present in multiple spots of the website. It also became apparent that a lot of the visual images don’t have accurate alternative text descriptions or simply just don’t have them. </p>
+</div>
+ 
+
+<h3>In Summary</h3>
+<p>Thank you for taking the time to review our findings. We believe that most of the issues mentioned here can be resolved. Included below are some helpful articles on web accessibility.</p>
+
+ <h2>Related Articles:</h2>
+ <ul>
+<li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">W3C Web Accessibility Initiative (WAI)</a></li>
+<li><a href="https://www.w3.org/WAI/standards-guidelines/">W3C Accessibility Standards Overview</a></li>
+<li><a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</a></li>
+<li><a href="https://adata.org/ocr-videos">The U.S. Department of Education’s Office for Civil Rights – Video Series</a></li>
+<li><a href="https://www.w3.org/WAI/test-evaluate/">Evaluating Web Accessibility Overview</a></li>
+</ul>
+
+</div> 
+</body>
+</html>
